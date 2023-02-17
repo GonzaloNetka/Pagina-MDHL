@@ -5,31 +5,27 @@
     background-color: rgb(246, 247, 232);
 }
 .encabezado{
-    margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
-    height: 400px;
+    margin: 30px 80px 0 80px;
+    height: 350px;
     background-image: url(imagenes/design1_image2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 h1{
     font-size: 4.5em;
-    text-align: left;
+    text-align: right;
     font-style: oblique;
-    margin-left: 80px;
-    margin-top: 20px;
-
+    padding-right: 10px;
+    margin: 20px 100px 0 100px;
 }
 .imagen-logo-superior{
     display: inline-block;
     width: 130px;
     height: 130px;
     position: absolute;
-    right: 300px;
+    left: 85px;
     top: 10px;
     background-color: transparent;
-    
 }
 .imagen-logo{
     display: inline-block;
@@ -37,22 +33,17 @@ h1{
     height: 130px;
     position: absolute;
     right: 80px;
-    top: 330px;
-    border: solid 1px black;
-    background-color: white;
+    top: 630px;
 }
 nav{
     display: flex;
     flex-direction: column;
     align-items: end;
     background-color: transparent;
-    
 }
 .btn-a {
     font-size: 1.5em;
     padding: 10px 30px;
-    margin-top: 5px;
-    margin-left: 10px;
     height: 44px;
     width: 130px;
     background-color: rgb(37, 37, 243);
@@ -63,41 +54,52 @@ nav{
     box-shadow: 4px 4px rgb(61, 61, 144);
 }
 .btn-actual{
-    background-color: green;
+    background-color: rgb(104, 104, 242);
     color: black;
 }
 h2{
     font-size: 2.5em;
     text-decoration: underline;
+    font-style: italic;
     text-align: left;
-    margin-left: 100px;
-    margin-top: 40px;
     margin-bottom: 15px;
 } 
 .seccion-principal{
-    min-height: 400px;
-    width: 1300px;
+    min-height: 100px;
+    width: 1100px;
     display: inline-block;
-    
+    margin-left: 100px;
+    margin-top: 40px;
+
+}
+.seccion-contacto{
+    min-height: 300px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
 }
 h3{
     font-size: 1.75em;
     font-style: italic;
-    margin-left: 120px;
-
+}
+h4{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.h4-fino{
+    font-weight: normal;
 }
 p{
     font-size: 1.2em;
     margin-bottom: 15px;
     margin-top: 5px;
-    margin-left: 120px;
     background-color: transparent;
 }
 article{
     font-size: 1.2em;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    margin-left: 120px;
+    margin: 5px 0 30px 0;
     text-indent: 20px;
 }
 .seccion-footer{
@@ -109,5 +111,45 @@ article{
     color: white;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 15px;
+}
+table{
+    font-size: 1.8em;
+    margin: 25px 0 60px 80px;
+    text-align: center;
+}
+th{
+    padding: 30px 85px;
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.numeros-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+.titulo-rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 
 }
+ol.normal {
+    list-style-type: lower-alpha;
+    margin-left: 50px;
+}
+
+ol.circle{
+    margin-left: 50px;
+    list-style-type: circle;
+}
+
+
+
+
