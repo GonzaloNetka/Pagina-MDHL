@@ -6,122 +6,92 @@
     font-family: 'Lora', serif;
     /* font-family: 'Poppins', sans-serif; */
 }
-.encabezado{
-    margin: 30px 80px 0 80px;
-    height: 350px;
-    background-image: url(imagenes/design1_image2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-h1{
-    font-size: 4.5em;
-    text-align: right;
-    font-style: oblique;
-    padding-right: 10px;
-    margin: 20px 100px 0 100px;
-}
-.imagen-logo-superior{
-    display: inline-block;
+.logo-superior{
     width: 130px;
     height: 130px;
-    position: absolute;
-    left: 85px;
-    top: 10px;
     background-color: transparent;
 }
-.imagen-logo{
-    display: inline-block;
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    right: 80px;
-    top: 630px;
+.row{
+    padding: 0;
+}
+.col{
+    padding: 0;
+}
+.col-2{
+    display: flex;
+    justify-content: center;
+}
+.col-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1.titulo-ppal{
+    font-size: 3.8em;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 23px;
 }
 nav{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    background-color: transparent;
 }
-.btn-a {
+a.btn-a{
     font-size: 1.5em;
-    padding: 10px 30px;
     height: 44px;
-    width: 130px;
-    background-color: rgb(37, 37, 243);
+    width: 150px;
+    background-color: #229954  ;
     margin-bottom: 15px;
-    color: white;
+    color: black;
     text-decoration: none;
-    border-radius: 5%;
-    box-shadow: 4px 4px rgb(61, 61, 144);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 0px  #1a7b43 inset;
+    transition: all 0.05s;
 }
-.btn-actual{
-    background-color: rgb(104, 104, 242);
+a.btn-a:hover{
+    box-shadow:15em 0 #F7DC6F inset;
     color: black;
 }
-h2{
+a.btn-actual{
+  background-color: #F7DC6F; 
+}
+h2.seccion-ppal{
     font-size: 2.5em;
     text-decoration: underline;
     font-style: italic;
-    text-align: left;
-    margin-bottom: 15px;
-} 
-.seccion-principal{
-    min-height: 100px;
-    width: 1100px;
-    display: inline-block;
-    margin-left: 100px;
-    margin-top: 40px;
-
-}
-.seccion-contacto{
-    min-height: 300px;
-    width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
-}
-h3{
-    font-size: 1.75em;
-    font-style: italic;
-}
-h4{
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-.h4-fino{
-    font-weight: normal;
-}
-p{
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    background-color: transparent;
-}
-article{
-    font-size: 1.2em;
-    margin: 5px 0 30px 0;
-    text-indent: 20px;
+    text-align: center;
 }
 .seccion-footer{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color:rgb(37, 37, 243);
+    background-color:#229954;
     height: 80px;
     color: white;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 15px;
+}
+p{
+    background-color: transparent;
+    font-size: 1.3em;
+    text-indent: 25px;
+    text-justify: auto;
+}
+.seccion-contacto{
+    text-align: center;
+    min-height: 150px;
 }
 table{
     font-size: 1.8em;
-    margin: 25px 0 60px 80px;
+    margin-bottom: 100px;
     text-align: center;
 }
+.tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 th{
-    padding: 30px 85px;
+    padding: 30px 50px 30px 60px;
 }
 td{
     padding-top: 10px;
@@ -130,28 +100,253 @@ td{
 .numeros-contacto{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 25px;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
-.titulo-rules{
+h4.size-h4{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.mapas{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-
+    justify-content: center;
 }
-ol.normal {
-    list-style-type: lower-alpha;
-    margin-left: 50px;
+.col-4.mapas{
+    margin-top: 50px;
 }
-
-ol.circle{
-    margin-left: 50px;
-    list-style-type: circle;
+.card-body{
+    background-color: black;
+    color: white;
 }
-
-
-
+.card-title{
+    background-color: black;
+    color: white;
+}
+.container-fluid.margen-formulario{
+    padding: 0;
+}
+.formulario{
+    font-size: 1.5em;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+fieldset.etiqueta-formulario{
+  margin-top: 20px;
+}
+input{
+  border-style: initial;
+  border-bottom: 1px solid black;
+}
+.disclaimer{
+    margin-bottom: 20px;
+    margin-right: 2px;
+    font-size: 1em;
+    text-indent: 30px;
+}
+.caja-boton-send{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+.botonSend{
+    font-size: 1.5em;
+    padding: 5px 30px;
+    height: 60px;
+    width: 170px;
+    background-color: #229954  ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 4px 4px  #1a7b43;
+}
+h3.margenes-formulario{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.lista-rules{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+h4.lista-rules{
+  margin-top: 25px ;
+  margin-bottom: 20px;
+}
+.clase-lista-circulo{
+  list-style-type: circle !important;
+  }
+.clase-lista-normal{
+  list-style-type: lower-latin !important;
+}
+ol{
+  margin-bottom: 0 !important;
+}
+/* MEDIA 334px-690px */
+@media  screen and (min-width: 334px) and (max-width: 690px){
+  h1.titulo-ppal{
+      font-size: 1.2em;
+      margin-top: 0;
+  }
+  .logo-superior{
+      width: 55px;
+      height: 55px;
+  }
+  h2.seccion-ppal{
+      font-size: 1.3em;
+  }
+  a.btn-a{
+      font-size: 0.6em;
+      height: 14px;
+      width: 63px;
+      margin-bottom: 0.5px;
+      border-radius: 0px;
+      box-shadow: 1px 1px  #1a7b43 ;
+  }
+  p{
+      font-size: 0.9em;
+      text-indent: 15px;
+  }
+  h3.ajuste-media{
+      font-size: 1em;
+  }
+  .container-fluid.margen-formulario{
+      margin-left: 0;
+  }
+  .formulario{
+      font-size: 0.6em;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+  fieldset.etiqueta-formulario{
+    margin-top: 5px;
+  }
+  
+  .disclaimer{
+      margin-bottom: 10px;
+      margin-right: 1px;
+      font-size: 0.7em;
+  }
+  .botonSend{
+      font-size: 0.6em;
+      padding: 1px 5px;
+      height: 20px;
+      width: 60px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      box-shadow: none;
+  }
+  h3.margenes-formulario{
+      margin-bottom: 8px;
+      margin-top: 6px;
+      font-weight: bold;
+      font-size: 1em;
+  }
+  h4.margenes-formulario{
+      font-size: 0.8em;
+  }
+  table{
+      font-size: 0.6em;
+      margin-bottom: 20px;
+  }
+  th{
+      padding: 10px 14px 9px 22px;
+  }
+  td{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }  
+  h4.size-h4{
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-size: 0.6em;
+  }
+  .lista-rules{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  h4.lista-rules{
+    font-size: 1em;
+    margin-top: 8px ;
+    margin-bottom: 5px;
+  }
+}
+     /* MEDIA 691px-992px */
+@media  screen and (min-width: 691px) and (max-width: 992px){
+  h1.titulo-ppal{
+      font-size: 2.8em;
+      margin-top: 11px;
+  }
+  .logo-superior{
+      width: 88px;
+      height: 88px;
+  }
+  h2.seccion-ppal{
+      font-size: 1.7em;
+  }
+  a.btn-a{
+      font-size: 1.2em;
+      height: 28px;
+      width: 112px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      box-shadow: 3.2px 3.2px  #1a7b43;
+  }
+  p{
+      font-size: 1.15em;
+      text-indent: 15px;
+  }
+  h3.ajuste-media{
+    font-size: 1.5em;
+  }
+  .container-fluid.margen-formulario{
+      margin-left: 30px;
+  }
+  .formulario{
+      font-size: 1em;
+      margin-right: 40px;
+      margin-left: 40px;
+  }
+  fieldset{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .disclaimer{
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-size: 0.9em;
+  }
+  .botonSend{
+      font-size: 1.2em;
+      padding: 2.5px 15px;
+      height: 40px;
+      width: 120px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px  #1a7b43;
+  }
+  h3.margenes-formulario{
+      margin-bottom: 17px;
+      margin-top: 13px;
+      font-weight: bold;
+      font-size: 1.5em;
+  }
+  h4.margenes-formulario{
+    font-size: 1.2em;
+  }
+  table{
+    font-size: 1.2em;
+    margin-bottom: 60px;
+  }
+  th{
+      padding: 20px 35px 18px 45px;
+  }
+  
+  h4.size-h4{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+}
 

@@ -5,48 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link href="style.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <title>Mighty Ducks Hockey League</title>
   </head>
 
   <body>
 
     <header>
-      <h1>Mighty Ducks Hockey League</h1>
-      <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="imagen-logo-superior">
-      <div class="encabezado">
-        <nav>
-          <a class="btn-a " href="index.html">Inicio</a>
-          <a class="btn-a" href="About-MDHL.html">About</a>
-          <a class="btn-a btn-actual" href="#">Game</a>
-          <a class="btn-a" href="rules.html">Rules</a>
-          <a class="btn-a" href="contact.html">Contact</a>
-        </nav>
+      <!-- TITULO -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+          <div class="col-8">
+            <h1 class="titulo-ppal"><b>Mighty Ducks Hockey League</b></h1>
+          </div>
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+        </div>
+      </div>
+      <!-- BARRA NAVEGACION Y BANNER   -->
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-2">
+            <nav>
+              <a class="btn-a" href="index.html">Inicio</a>
+              <a class="btn-a" href="About-MDHL.html">About</a>
+              <a class="btn-a btn-actual" href="#">Game Info</a>
+              <a class="btn-a" href="rules.html">Rules</a>
+              <a class="btn-a" href="formulario.html">Registration</a>
+              <a class="btn-a" href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div class="col-9" >
+            <img src="imagenes/design1_image2.jpg" class="img-fluid banner" alt="Hockey">
+          </div>
+        </div>
       </div>
     </header>
-    
-
-    <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="imagen-logo">
+      
     <section>
-      <div class="seccion-principal">
-      <h2 style=" text-decoration: none;">Fall Schedule</h2>
-      <h3 style=" text-decoration: underline;">* All games take place on Saturday</h3>
+      <!-- SEGUNDO TITULO -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+          <div class="col-8">
+            <div >
+              <div>
+                <h2 class="seccion-ppal" style=" text-decoration: none;"><b>Fall Schedule</b></h2>
+              </div>
+              <div>
+                <h3 class="ajuste-media" style=" text-decoration: underline;">* All games take place on Saturday</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+        </div>
       </div>
+
+      <!-- TABLA -->
+      <div class="tabla">
       <table>
         <tr>
           <th>SEPTEMBER</th>
           <th>Teams</th>
           <th>Location</th>
+          <th>Maps</th>
           <th>Times</th>        
         </tr>
         <tr>
           <td rowspan="2">9/01</td>
           <td>U1 and U4</td>
           <td>AJ Katzenmaier</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>9:30 AM</td>
         </tr>
         <tr>
           <td>U3 and U2</td>
           <td>Greenbay</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>1:00 PM</td>
         </tr>
 
@@ -54,11 +103,13 @@
           <td rowspan="2">9/08</td>
           <td>U5 and U6</td>
           <td>Howard A Yeager</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>9:30 AM</td>
         </tr>
         <tr>
           <td>U6 and U1</td>
           <td>Marjorie P Hart</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>1:00 PM</td>
         </tr>
 
@@ -66,11 +117,13 @@
           <td rowspan="2">9/15</td>
           <td>U2 and U4</td>
           <td>North</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>9:30 AM</td>
         </tr>
         <tr>
           <td>U3 and U5</td>
           <td>AJ Katzenmaier</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>1:00 PM</td>
         </tr>
 
@@ -78,11 +131,13 @@
           <td rowspan="2">9/22</td>
           <td>U1 and U3</td>
           <td>South</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>9:30 AM</td>
         </tr>
         <tr>
           <td>U2 and U6</td>
           <td>Howard A Yeager</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>1:00 PM</td>
         </tr>
 
@@ -90,20 +145,85 @@
           <td>9/29</td>
           <td>U4 and U5</td>
           <td>Greenbay</td>
+          <td><a href="#maps">See Maps</a></td>
           <td>9:30 AM</td>
         </tr>
       </table>
-      <div class="seccion-principal">
-        
-        <h4>Facility Type: <span class="h4-fino">Outdoor</span></h4>
-        <h4>Additional Information: <span class="h4-fino">if deemed necessary by MDHL games may be shortened or cancelled due to extreme weather conditions.</span></h4>
-
-        <h4>Please direct all questions to: <span class="h4-fino">Michael Randall, League Coordinator</span></h4>
       </div>
-      <div class="numeros-contacto">
-        <h4>Phone: <span class="h4-fino">(630)690-8132</span></h4>
-        <h4>Email<a href="michael.randall@chihockey.org">michael.randall@chihockey.org</a></h4>
-    </div>    
+
+      <div class="container">
+        <h4 class="size-h4"><b>Facility Type:</b> Outdoor</h4>
+        <h4 class="size-h4"><b>Additional Information:</b> if deemed necessary by MDHL games may be shortened or cancelled due to extreme weather conditions.</h4>
+        <h4 class="size-h4"><b>Please direct all questions to:</b> Michael Randall, League Coordinator</h4>
+      </div>
+
+      <div class="container numeros-contacto">
+        <h4 class="size-h4"><b>Phone:</b> (630)690-8132</h4>
+        <h4 class="size-h4"><b>Email: </b><a href="michael.randall@chihockey.org">michael.randall@chihockey.org</a></h4>
+      </div>    
+    </section>
+    <!-- MAPAS -->
+    <section>
+      <div class="container-fluid">
+        <h2 class="seccion-ppal" id="maps">Maps Section</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.7806441290877!2d-87.86499328417187!3d42.325877179189085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses!2sar!4v1676868767132!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">AJ Katzenmaier</h4>
+                <p class="card-text">1829 Kennedy Dr, North Chicago, IL 60088, Estados Unidos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.010604115179!2d-87.87107038417203!3d42.32097257918946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f933bce5af881%3A0x740a7a7d548adce1!2sGreen%20Bay%20School%20(Pre-K)!5e0!3m2!1ses!2sar!4v1676871322776!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">Greenbay</h4>
+                <p class="card-text">2100 N Green Bay Rd, North Chicago, IL 60064, Estados Unidos</p>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.270062631387!2d-87.8560697841722!3d42.31543827918989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses!2sar!4v1676871574126!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">Howard A Yeager</h4>
+                <p class="card-text">1811 Morrow Ave, North Chicago, IL 60064, Estados Unidos</p>
+              </div>
+            </div>  
+          </div>
+        
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.289839348973!2d-87.64816138418203!3d41.92962287921813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses!2sar!4v1676912662520!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">Marjorie P Hart</h4>
+                <p class="card-text">N Orchard St, Chicago, IL 60614, Estados Unidos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.335548703631!2d-87.64831158418261!3d41.90714487921974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af14860a5%3A0x5736e62f19086c62!2sNorth%20Elementary!5e0!3m2!1ses!2sar!4v1676912823708!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">North Elementary</h4>
+                <p class="card-text">W Schiller St, Chicago, IL 60610, Estados Unidos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 mapas">
+            <div class="card" style="width: 24rem;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.0706355069315!2d-87.88823348417971!3d42.0202170792111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb7ad3c474b63%3A0x93bdf85af2a839ed!2sSOUTH%20ELEMENTARY%20SCHOOL!5e0!3m2!1ses!2sar!4v1676913062402!5m2!1ses!2sar" class="card-img-top" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="card-body">
+                <h4 class="card-title">South Elementary</h4>
+                <p class="card-text">1535 Everett Ave, Des Plaines, IL 60018, Estados Unidos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     
     <footer>

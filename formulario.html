@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="style.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Mighty Ducks Hockey League</title>
+  </head>
+
+  <body>
+
+    <header>
+      <!-- TITULO -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+          <div class="col-8">
+            <h1 class="titulo-ppal"><b>Mighty Ducks Hockey League</b></h1>
+          </div>
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+        </div>
+      </div>
+      <!-- BARRA NAVEGACION Y BANNER   -->
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-2">
+            <nav>
+              <a class="btn-a" href="index.html">Inicio</a>
+              <a class="btn-a" href="About-MDHL.html">About</a>
+              <a class="btn-a" href="Game-information.html">Game Info</a>
+              <a class="btn-a" href="rules.html">Rules</a>
+              <a class="btn-a btn-actual" href="#">Registration</a>
+              <a class="btn-a" href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div class="col-9" >
+            <img src="imagenes/design1_image2.jpg" class="img-fluid banner" alt="Hockey">
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <!-- SEGUNDO TITULO -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+          <div class="col-8">
+            <h2 class="seccion-ppal"><b>Registration Form</b></h2>
+          </div>
+          <div class="col-2">
+            <img src="./imagenes/Logo.png" alt="Logo Mighty Ducks Hockey League" class="logo-superior">
+          </div>
+        </div>
+      </div>
+      <!-- DESARROLLO SECCION PRINCIPAL -->
+      <div class="container-fluid margen-formulario">
+        <form action="./show_data.html" method="get">
+          <!-- Datos personales -->
+          <div class="formulario">
+            <fieldset class="etiqueta-formulario">
+              <label for="fname"> Player's First Name:</label>
+              <input type="text" id="fname" name="fname">
+              <label for="lname"> Last Name:</label>
+              <input type="text" id="lname" name="lname">
+            </fieldset>
+            <fieldset class="etiqueta-formulario" >  
+              <label for="address"> Street Address:</label>
+              <input type="text" id="address" name="address">
+            </fieldset>
+            <fieldset class="etiqueta-formulario">
+              <label for="city"> City:</label>
+              <input type="text" id="city" name="city">
+              <label for="zcode"> Zip Code:</label>
+              <input type="number" id="zcode" name="zcode">
+            </fieldset>
+            <fieldset class="etiqueta-formulario">  
+              <label for="birthday"> Birth Date:</label>
+              <input type="date" id="birthday" name="birthday">
+              Gender:
+              <label for="female">Femele</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male">
+            </fieldset>
+            <fieldset class="etiqueta-formulario">
+              Grade:
+              <input type="radio" id="preSchool" name="grade" value="preSchool">
+              <label for="preSchool">Pre-School </label>
+              <label for="1st">1st</label>
+              <input type="radio" id="1st" name="grade" value="1st">
+              <label for="2st">2st</label>
+              <input type="radio" id="2st" name="grade" value="2st">
+              <label for="3st">3st</label>
+              <input type="radio" id="3st" name="grade" value="3st">
+              <label for="4st">4st</label>
+              <input type="radio" id="4st" name="grade" value="4st">
+              <label for="5st">5st</label>
+              <input type="radio" id="5st" name="grade" value="5st">
+            </fieldset>
+          
+          <!-- ESCUELA MAS CERCA -->
+          <h3 class="margenes-formulario">Which elementary school do you live near?</h3>
+          <h4 class="margenes-formulario"><b>Closest School</b></h4>
+          <fieldset>
+            <input type="radio" id="katzenmaier" name="closest" value="katzenmaier">
+            <label for="katzenmaier">AJ Katzenmaier</label>
+            <input type="radio" id="hart" name="closest" value="hart">
+            <label for="hart">Marjorie P Hart</label>
+          </fieldset>      
+          <fieldset>
+            <input type="radio" id="greenbay" name="closest" value="greenbay">
+            <label for="greenbay">Greenbay</label>
+            <input type="radio" id="north" name="closest" value="north">
+            <label for="north">North Elementary</label>
+          </fieldset>
+          <fieldset>
+            <input type="radio" id="yeager" name="closest" value="yeager">
+            <label for="yeager">Howard A Yeager</label>
+            <input type="radio" id="south" name="closest" value="south">
+            <label for="south">South Elementary</label>
+          </fieldset>
+          <!-- POSISION EN LA QUE JUEGA -->
+          <h3 class="margenes-formulario">What position(s) do you normally play? (check all that apply)</h3>
+          <fieldset>
+            <input type="checkbox" id="forward" name="forward" value="forward">
+            <label for="forward">Forward</label>
+            <input type="checkbox" id="midlfield" name="midlfield" value="midlfield">
+            <label for="midlfield">Midlfield</label>
+          </fieldset>
+          <fieldset> 
+            <input type="checkbox" id="defense" name="defense" value="defense">
+            <label for="defense">Defense</label>
+            <input type="checkbox" id="goalkeeper" name="goalkeeper" value="goalkeeper">
+            <label for="goalkeeper">Goalkeeper</label>
+          </fieldset>
+              
+          <!-- TALLE UNIFORME -->
+          <h3 class="margenes-formulario">Uniform Size</h3>
+          <fieldset>
+            <input type="radio" id="ySmall" name="size" value="ySmall">
+            <label for="ySmall">Youth Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+          </fieldset>
+          <fieldset>    
+            <input type="radio" id="yMedium" name="size" value="yMedium">
+            <label for="yMedium">Youth Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+          </fieldset>
+          <fieldset>    
+            <input type="radio" id="yLarge" name="size" value="yLarge">
+            <label for="yLarge">Youth Large</label>
+            <input type="radio" id="xLarge" name="size" value="xLarge">
+            <label for="xLarge">Extra Large</label>
+          </fieldset>
+          <fieldset>    
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+          </fieldset>  
+        
+          <!-- PERMISO DE JUEGO -->
+          <h3 class="margenes-formulario">Permission to Play</h3>
+          <div class="disclaimer">
+            I, the parent or guardian of the minor registrant, agree that the
+            registrant and I will abide by all the rules of the Mighty Ducks Hockey
+            League (MDHL). In recognizing the possibility of physical injury
+            associated with hockey and in consideration for the "League" accepting
+            the registrant for its hockey programs and activities, I hereby release,
+            discharge, and/or otherwise indemnify MDHL, their employees and
+            associated personnel and volunteers, including the facilities used for
+            practices and games, against any claim by or on behalf of the registrant
+            as a result of the registrant's participation in the programand or being
+            transported to or from MDHL sponsored activities, which transportation
+            By signing below, I hereby agree and authorize the above. In addition,
+            by signing below, also acknowledge that I have read the cancellation
+            policy and agree to its terms.
+          </div>
+          <fieldset class="etiqueta-formulario">
+            <label for="parent">Parent/GuardianSginature: </label>
+            <input type="text" id="parent" name="parent" >
+          </fieldset>
+          <fieldset class="etiqueta-formulario">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+          </fieldset>
+          <div class="caja-boton-send">
+            <button class="botonSend" type="submit">Send</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="seccion-footer">
+        <p>Copyright &copy; 2023 Gonzalo Netka, todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
